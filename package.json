@@ -4,7 +4,7 @@
   "scripts": {
     "build": "webpack --config build/webpack.config.js",
     "watch": "tsc --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "cd build && typings install && tsc"
   },
   "author": "valaxy",
   "license": "MIT",
